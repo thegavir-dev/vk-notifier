@@ -1,3 +1,9 @@
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![WordPress](https://img.shields.io/badge/WordPress-5.0%2B-21759b)
+![Tested up to](https://img.shields.io/badge/tested%20up%20to-6.9-21759b)
+![PHP](https://img.shields.io/badge/PHP-7.4%2B-777bb4)
+![License](https://img.shields.io/badge/license-GPL%20v2%2B-green)
+
 # VK Notifier
 
 WordPress-плагин для дублирования email-уведомлений сайта в сообщения ВКонтакте.
