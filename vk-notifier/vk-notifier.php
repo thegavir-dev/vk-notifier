@@ -3,7 +3,8 @@
  * Plugin Name: VK Notifier
  * Plugin URI:
  * Description: Перехватывает email-уведомления WordPress и дублирует их в ВКонтакте (личные сообщения или беседы)
- * Version: 1.0.0
+ * Version: 1.0.1
+ * Tested up to: 7.0
  * Author: StudioAVP
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -17,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Константы плагина
-define( 'VK_NOTIFIER_VERSION', '1.0.0' );
+define( 'VK_NOTIFIER_VERSION', '1.0.1' );
 define( 'VK_NOTIFIER_DB_VERSION', '1.0.0' );
 define( 'VK_NOTIFIER_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'VK_NOTIFIER_PLUGIN_URL', plugin_dir_url( __FILE__ ) );

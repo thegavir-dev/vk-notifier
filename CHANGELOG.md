@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.1] — 2026-05-25
+
+### Fixed
+- Preserved line breaks from common HTML block tags when forwarding email text to VK.
+
 ## [1.0.0] — 2026-05-13
 
 ### Added

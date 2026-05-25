@@ -57,13 +57,21 @@ class VK_Notifier_Message_Builder {
      * @return string
      */
 	private function clean_text( $text ) {
-        // Удаляем HTML теги
+        // Сначала заменяем блочные теги на переносы строк
+        $text = preg_replace( '/<br\s*\/?>/i', "\n", $text );
+        $text = preg_replace( '/<\/p>/i', "\n\n", $text );
+        $text = preg_replace( '/<\/div>/i', "\n", $text );
+        $text = preg_replace( '/<\/li>/i', "\n", $text );
+
+        // Теперь удаляем оставшиеся теги
         $text = wp_strip_all_tags( $text );
+
         // Преобразуем HTML-сущности
         $text = html_entity_decode( $text, ENT_QUOTES, 'UTF-8' );
-        // Убираем лишние пробелы и пустые строки
+
+        // Убираем лишние пробелы (но не переносы строк)
         $text = preg_replace( '/[ \t]+/', ' ', $text );
-		$text = preg_replace( "/\n\s*\n/", "\n\n", $text );
+		$text = preg_replace( "/\n\s*\n\s*\n/", "\n\n", $text );
 		return trim( $text );
 	}
 

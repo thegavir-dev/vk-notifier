@@ -1,6 +1,6 @@
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Version](https://img.shields.io/badge/version-1.0.1-blue)
 ![WordPress](https://img.shields.io/badge/WordPress-5.0%2B-21759b)
-![Tested up to](https://img.shields.io/badge/tested%20up%20to-6.9-21759b)
+![Tested up to](https://img.shields.io/badge/tested%20up%20to-7.0-21759b)
 ![PHP](https://img.shields.io/badge/PHP-7.4%2B-777bb4)
 ![License](https://img.shields.io/badge/license-GPL%20v2%2B-green)
 
@@ -172,4 +172,5 @@ WordPress-плагин для дублирования email-уведомлен�
 
 | Версия | Описание |
 |---|---|
+| 1.0.1 | Исправлено сохранение переносов строк при очистке HTML-текста писем |
 | 1.0.0 | Первый публичный релиз |
